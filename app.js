@@ -85,7 +85,7 @@ function addTask(e) {
   // Store in LS
   storeTaskInLocalStorage(taskInput.value);
   //Barcodeify
-  JsBarcode(barcode, taskInput.value);
+  JsBarcode(barcode, taskInput.value.toUpperCase());
   // Clear input
   taskInput.value = "";
 
